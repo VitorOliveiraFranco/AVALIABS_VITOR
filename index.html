@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <div class="col-12">
+
+                <!-- Navbar -->
+                <div class="mb-5">
+                    <h1>Barra de navegação</h1>
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Barra de navegação</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Características</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Preços</a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Carousel -->
+                <div class="mb-5">
+                    <h1>Carousel</h1>
+                    <div id="exemplo" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="bg-info">
+                                    <img width="100%" height="500px" src="assets/001.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="bg-warning">
+                                    <img width="100%" height="500px" src="assets/002.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="bg-success">
+                                    <img width="100%" height="500px" src="assets/003.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="mb-5">
+                    <h1>Card</h1>
+                    <div class="card p-3 mb-5">
+                        <h5 class="card-title">Titulo do Card</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Subtitulo do Card</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit corporis laborum quo incidunt! Dolor molestiae ab tempora odio quo.</p>
+                        <a href="#" class="card-link">Ir para a página</a>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="mb-5">
+                    <h1>Modal</h1>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minhaModal">Mostrar a modal</button>
+                    </div>
+                    <div class="modal fade" id="minhaModal" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Título</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid itaque molestias repellendus sed inventore maiores architecto sint repellat tenetur? Ipsa.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secundary" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Aceitar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+                <!-- Offcanvas -->
+                <div class="mb-5">
+                    <h1>Offcanvas</h1>
+                    <div class="text-center mt-5">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#meuOffcanvas" aria-controls="offcanvasExample">Mostrar o offcanvas</button>
+                    </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="meuOffcanvas" aria-labelledby="meuOffcanvas">
+                        <div class="text-center p-5">
+                            CONTEÚDO
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion -->
+                <div class="mb-5">
+                    <h1>Accodion</h1>
+                    <div class="accordion" id="accordionExemplo">
+                        <!-- item 1 do accordion -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="titulo_1">
+                                <button class="accordion-button" 
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#area_1"
+                                aria-expanded="true"
+                                aria-controls="titulo_1">Accordion Item #1</button>
+                            </h2>
+                            <div id="area_1" 
+                            class="accordion-collapse collapse" 
+                            aria-labelledby="titulo_1" 
+                            data-bs-parent="#accordionExemplo">
+                                <div class="accordion-body">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi reiciendis architecto sapiente dolore, voluptate beatae. Minima, officia quae enim ullam inventore, natus dicta cupiditate quia nobis, necessitatibus modi nam? Eligendi?
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <!-- item 2 do accordion -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="titulo_2">
+                                <button class="accordion-button" 
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#area_2"
+                                aria-expanded="true"
+                                aria-controls="titulo_2">Accordion Item #2</button>
+                            </h2>
+                            <div id="area_2" 
+                            class="accordion-collapse collapse" 
+                            aria-labelledby="titulo_2" 
+                            data-bs-parent="#accordionExemplo">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, porro obcaecati dolorem sequi laborum error praesentium dolore voluptas veniam nesciunt minus voluptatum sit provident quis ipsa. Blanditiis, illo ad, facilis culpa ipsum quam, amet ea libero expedita nostrum fugiat nesciunt. Cum veniam numquam alias dolorem eligendi, quis dolore rerum velit voluptate quisquam! Voluptas, ducimus quod.
+                                </div>
+                            </div>
+                    </div>
+   
+                    <!-- item 3 do accordion -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="titulo_3">
+                            <button class="accordion-button" 
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#area_3"
+                            aria-expanded="true"
+                            aria-controls="titulo_3">Accordion Item #3</button>
+                        </h2>
+                        <div id="area_3" 
+                        class="accordion-collapse collapse" 
+                        aria-labelledby="titulo_3" 
+                        data-bs-parent="#accordionExemplo">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at placeat vel non in a? Atque reprehenderit ipsum ratione laborum consequatur hic vitae sed, maxime blanditiis debitis assumenda aliquid dolorem. Molestiae eligendi veritatis similique hic.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <!-- Popover -->
+                <div class="mb-5">
+                    <h1>Popover</h1>
+                    <div class="text-center">
+                        <button type="button" 
+                        class="btn btn-lg btn-danger" 
+                        data-bs-toggle="popover" 
+                        data-bs-title="Popover title" 
+                        data-bs-placement="bottom"
+                        data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                            Click to toggle popover
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Dropdawn -->
+                <div class="mb-5">
+                    <h1>Dropdawn</h1>
+                    <div class="dropdown text-center">
+                        <button class="btn btn-warning dropdown-toggle" 
+                        type="button" 
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false">Menu dropdown</button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Item Um</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Item Dois</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Item Três</a>
+                            </li>
+
+                            <!-- inserir dropdown divider -->
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <div class="mb-5">
+                    <h1>Formulário</h1>
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <form action="#" method="post">
+                                    <h3 class="text-primary-emphasis">Cadastro</h3>
+                                    <h5 class="mb-3 mt-3 text-body-secondary">Digite seu nome de usuário e apelido!</h5>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="" class="visually-hidden">Usuário</label>
+                                            <input type="text" class="form-control" placeholder="Usuário">
+                                        </div>
+                                        <div class="col">
+                                            <label for="" class="visually-hidden">Apelido</label>
+                                            <input type="text" class="form-control" placeholder="Apelido">
+                                        </div>
+                                    </div>
+                                    
+                                    <h5 class="mt-3 text-body-secondary">Selecione seu Gênero</h5>
+                                    <div class="form-check">
+                                        <input type="radio" name="opcao" id="fem" class="form-check-input">
+                                        <label for="fem" class="form-check-label">Feminino</label>
+                                    </div>
+                
+                                    <div class="form-check">
+                                        <input type="radio" name="opcao" id="mas" class="form-check-input">
+                                        <label for="mas" class="form-check-label">Masculino</label>
+                                    </div>
+                
+                                    <div class="form-check">
+                                        <input type="radio" name="opcao" id="other" class="form-check-input">
+                                        <label for="other" class="form-check-label">Outros</label>
+                                    </div>     
+                                    
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="mt-3 text-body-secondary">Digite seu e-mail</h5>
+                                            <input type="email" class="form-control" placeholder="seuemail@provedor.com">
+                                        </div>
+                                        <div class="col">
+                                            <h5 class="mt-3 text-body-secondary">Digite seu telefone</h5>
+                                            <input type="tel" class="form-control" placeholder="(xx) xxxxx-xxxx">
+                                        </div>
+                                    </div>
+                
+                                    <div class="mt-3 mb-3">
+                                        <h5 class="text-body-secondary">Observações</h5>
+                                        <textarea rows="5" class="form-control"></textarea>
+                                    </div>
+                
+                                    <div class="mb-3 text-end">
+                                        <input class="btn btn-danger" type="submit" value="Cancelar">
+                                        <input class="btn btn-success" type="submit" value="Salvar">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Responsivida das imagens -->
+                <div class="mb-5">
+                    <h1>Imagens Responsivas</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col"><img src="assets/001.jpg" class="img-fluid"></div>
+                            <div class="col"><img src="assets/002.jpg" class="img-fluid"></div>
+                            <div class="col"><img src="assets/003.jpg" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>
